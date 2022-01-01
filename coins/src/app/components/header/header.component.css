@@ -1,0 +1,34 @@
+@keyframes bitcoin{
+  from {
+   background-color: #90ee90;
+   }
+
+  to {
+    background-color: #228622;
+  }
+}
+.header {
+  letter-spacing: 2px;
+  padding: 20px;
+  padding-left: 200px;
+  text-align: left;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  color: white;
+  background-color: #228b22;
+  background-image: url("../../../assets/images/bitcoin.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position-x: center;
+  animation-name: bitcoin;
+  animation-duration: 2.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+
+
+ 

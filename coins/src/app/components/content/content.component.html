@@ -1,0 +1,53 @@
+<div class="content_grid">
+  <p>
+    Here you can search days in the longest downward trend, highest trading volume and the best day for buying bitcoin, and the best day for selling
+    it to maximize profits. Choose time range you like first.
+  </p>
+  <form class="form">
+    <fieldset>
+      <legend><b>Select days</b></legend>
+      <div>
+        <label for="dateFrom" class="dateFrom">From:</label>
+        <input type="date" id="dateFrom" name="dateFrom" #dateFrom>
+      </div>
+      <div>
+        <label for="dateTo" class="dateTo">To:</label>
+        <input type="date" id="dateTo" name="dateTo" #dateTo />
+      </div>
+      <button #but0 type="button" class="reset" id="but0" name="submit" (click)="resetData(); dateFrom.value=''; dateTo.value=''">Reset</button>
+    </fieldset>
+  </form>
+  <form class="form">
+    <fieldset>
+      <legend><b>Search days of the longest downward trend</b></legend>
+      <button #but1 type="button" class="submit" id="but1" name="submit" (click)="getData(dateFrom.value, dateTo.value, but1);">Submit</button>
+      <div>
+        <p>
+          {{answerDown}}
+        </p>
+      </div>
+    </fieldset>
+  </form>
+  <form class="form">
+    <fieldset>
+      <legend><b>Search the day with highest trading volume</b></legend>
+      <button #but2 type="button" class="submit" id="but2" name="submit" (click)="getData(dateFrom.value, dateTo.value, but2);">Submit</button>
+      <div>
+        <p>
+          {{answerMax}}
+        </p>
+      </div>
+    </fieldset>
+  </form>
+  <form class="form">
+    <fieldset>
+      <legend><b>Search best days to buy and sell your bitcoins.</b></legend>
+      <button #but3 type="button" class="submit" id="but3" name="submit" value="submit" (click)="getData(dateFrom.value, dateTo.value, but3);">Submit</button>
+      <div>
+        <p>
+        {{answerBestDays}}
+        </p>
+      </div>
+    </fieldset>
+  </form>  
+</div>

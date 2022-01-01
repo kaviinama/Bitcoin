@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\content",
+    "\\src\\app\\components\\footer",
+    "\\src\\app\\components\\header",
+    "\\src\\assets",
+    "\\src\\assets\\images"
+  ],
+  "SelectedNode": "\\src\\app\\components\\content\\content.component.html",
+  "PreviewInSolutionExplorer": false
+}

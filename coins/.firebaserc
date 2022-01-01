@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bitcoin-46183": {
+      "hosting": {
+        "coins": [
+          "bitcoin-46183"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bitcoin-46183"
+  }
+}
